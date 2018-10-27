@@ -9,6 +9,7 @@ const featureReducer = (state = initState, action) => {
       console.log('create feature error');
       return state;
     default:
+      console.log(action.type, ' is not a recognized action type');
       return state;
   }
 };
